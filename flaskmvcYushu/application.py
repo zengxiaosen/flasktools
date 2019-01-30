@@ -1,19 +1,47 @@
-from flask import Flask
-from sqlalchemy import create_engine
+
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column,String,Integer
 from sqlalchemy.orm import sessionmaker
-from flaskmvc import config
+from flaskmvcYushu import config, create_app, create_egn
+
 import pymysql
 pymysql.install_as_MySQLdb()
 
 
-
-app = Flask(__name__)
-engine = create_engine('mysql+pymysql://root:1234@127.0.0.1:3306/test', encoding="utf-8")
+app = create_app()
+engine = create_egn()
 
 Base = declarative_base()
 Base.metadata.create_all(engine)
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', debug=app.config.from_object(config['DEBUG']))
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class User(Base):
     __tablename__ = "user"
     id = Column(Integer, primary_key=True)
@@ -25,6 +53,8 @@ class Admin(Base):
     id = Column(Integer, primary_key=True)
     userName = Column(String(32))
     userPassword = Column(String(64))
+
+
 
 @app.route('/hello')
 def hello():
@@ -92,7 +122,3 @@ def creaateTable():
     engine.execute("insert into test1(id,name,salary) values(1,'zs',88888)")
     result = engine.execute('select * from test1')
     print(result.fetchall())
-
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=app.config.from_object(config['DEBUG']))
