@@ -2,44 +2,19 @@
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column,String,Integer
 from sqlalchemy.orm import sessionmaker
-from flaskmvcYushu import config, create_app, create_egn
-
+from ActivityUsingFlask import config, create_app, create_egn
+from . import app1
 import pymysql
 pymysql.install_as_MySQLdb()
 
 
-app = create_app()
 engine = create_egn()
 
 Base = declarative_base()
 Base.metadata.create_all(engine)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=app.config.from_object(config['DEBUG']))
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    app1.run(host='0.0.0.0', debug=app1.config.from_object(config['DEBUG']), threaded=True)
 
 
 class User(Base):
@@ -56,11 +31,11 @@ class Admin(Base):
 
 
 
-@app.route('/hello')
+@app1.route('/hello')
 def hello():
     return 'Hello World'
 
-@app.route('/')
+@app1.route('/')
 def hello_world():
     # self.createTable()
     # 父类Base调用所有继承他的子类来创建表结构
