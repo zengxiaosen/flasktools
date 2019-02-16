@@ -35,6 +35,10 @@ class Admin(Base):
 def hello():
     return 'Hello World'
 
+@app1.route("/table")
+def table():
+    createArticleTable()
+
 @app1.route('/')
 def hello_world():
     # self.createTable()
@@ -91,6 +95,15 @@ def insertTableUsingOrm():
 
 def createTableUsingOrm():
     Base.metadata.create_all(engine)
+
+def createArticleTable():
+    Base.metadata.create_all(engine)
+
+def createArticleTable():
+    engine.execute('create table article(title varchar(200) not null, create_date date, '
+                   'url varchar(300) not null, url_object_id varchar(50) not null, front_image_url varchar(300), '
+                   'front_image_path varchar(200), comment_nums int(11), fav_nums int(11), praise_nums int(11), '
+                   'tags varchar(200), content longtext )')
 
 def creaateTable():
     engine.execute('create table test1(id int,name varchar(48),salary int not null)')
