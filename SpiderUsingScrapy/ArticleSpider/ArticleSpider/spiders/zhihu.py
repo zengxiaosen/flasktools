@@ -5,6 +5,10 @@ from PIL import Image
 import scrapy
 from scrapy import Request
 from selenium.webdriver.chrome.options import Options
+from urllib import parse
+from scrapy.loader import ItemLoader
+
+from ArticleSpider.items import ZhihuQuestionItem
 
 
 class ZhihuSpider(scrapy.Spider):
@@ -20,7 +24,35 @@ class ZhihuSpider(scrapy.Spider):
 
     def parse(self, response):
         print("--------------------------")
+        all_urls = response.css("a::attr(href)").extract()
+        all_urls = [parse.urljoin(response.url,  url) for url in all_urls]
+        all_urls = filter(lambda x: True if x.startswith("https") else False, all_urls)
 
+        for url in all_urls:
+            match_obj = re.match("(.*zhihu.com/question/(\d+))(/|$).*", url)
+            if match_obj:
+                print(url)
+                request_url = match_obj.group(1)
+                question_id = match_obj.group(2)
+                print(request_url, question_id)
+                yield scrapy.Request(request_url, headers=self.headers, callback=self.parse_question)
+        pass
+
+    def parse_question(self, response):
+
+        if "QuestionHeader-title" in response.text:
+            print("latest version")
+            match_obj = re.match("(.*zhihu.com/question/(\d+))(/|$).*", response.url)
+            if match_obj:
+                question_id = int(match_obj.group(2))
+            item_loader = ItemLoader(item=ZhihuQuestionItem(), response=response)
+            item_loader.add_css("title", "h1.QuestionHeader-title::text")
+            item_loader.add_css("content", ".QuestionHeader-detail")
+            item_loader.add_value("url", response.url)
+            item_loader.add_value("zhihu_id", question_id)
+            # TODO tomorrow
+        else:
+            print("old version , please switch to latest version")
         pass
 
     def start_requests(self):

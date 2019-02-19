@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="247a9a4a-1938-4456-9da2-f2819d666671" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ArticleSpider/spiders/zhihu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/image/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/image/selenium_spider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/object/test6.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArticleSpider/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ArticleSpider/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ActivityUsingFlask/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../ActivityUsingFlask/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArticleSpider/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/ArticleSpider/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArticleSpider/spiders/zhihu.py" beforeDir="false" afterPath="$PROJECT_DIR$/ArticleSpider/spiders/zhihu.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ArticleSpider$main.coverage" NAME="main Coverage Results" MODIFIED="1550583623036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ArticleSpider$main.coverage" NAME="main Coverage Results" MODIFIED="1550591585755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ArticleSpider$zhihu.coverage" NAME="zhihu Coverage Results" MODIFIED="1550560193997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ArticleSpider/spiders" />
     <SUITE FILE_PATH="coverage/ArticleSpider$common.coverage" NAME="common Coverage Results" MODIFIED="1549988008397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ArticleSpider/utils" />
     <SUITE FILE_PATH="coverage/ArticleSpider$selenium_spider.coverage" NAME="selenium_spider Coverage Results" MODIFIED="1550415237345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools/image" />
@@ -41,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ArticleSpider/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
+            <state relative-caret-position="202">
+              <caret line="79" column="6" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
               <folding>
                 <element signature="e#152#167#0" expanded="true" />
               </folding>
@@ -79,8 +74,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ArticleSpider/spiders/zhihu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+            <state relative-caret-position="184">
+              <caret line="52" column="27" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -148,6 +143,7 @@
       <find>rob</find>
       <find>scrapy</find>
       <find>ROBOTSTXT_OBEY</find>
+      <find>User</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -157,21 +153,21 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/ArticleSpider/utils/common.py" />
-        <option value="$PROJECT_DIR$/ArticleSpider/items.py" />
         <option value="$PROJECT_DIR$/ArticleSpider/pipelines.py" />
         <option value="$PROJECT_DIR$/tools/image/selenium_spider.py" />
         <option value="$PROJECT_DIR$/ArticleSpider/spiders/jobbole.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/ArticleSpider/settings.py" />
+        <option value="$PROJECT_DIR$/ArticleSpider/items.py" />
         <option value="$PROJECT_DIR$/ArticleSpider/spiders/zhihu.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2004" />
-    <option name="y" value="305" />
-    <option name="width" value="1024" />
-    <option name="height" value="741" />
+    <option name="x" value="67" />
+    <option name="y" value="213" />
+    <option name="width" value="1299" />
+    <option name="height" value="555" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -223,7 +219,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -351,23 +347,23 @@
       <workItem from="1549898191940" duration="90000" />
       <workItem from="1549986363605" duration="19070000" />
       <workItem from="1550368461414" duration="27695000" />
-      <workItem from="1550557601401" duration="11963000" />
+      <workItem from="1550557601401" duration="15896000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58818000" />
+    <option name="totallyTimeSpent" value="62751000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1366" y="-2" width="1920" height="1082" extended-state="6" />
+    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14194237" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2122905" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49960095" visible="true" weight="0.30745015" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49960095" visible="true" weight="0.262215" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4994664" weight="0.39664218" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -393,8 +389,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ArticleSpider/spiders/zhihu.py</url>
-          <line>62</line>
+          <line>94</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ArticleSpider/spiders/zhihu.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -466,16 +467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ArticleSpider/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
-          <folding>
-            <element signature="e#152#167#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ArticleSpider/spiders/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -537,10 +528,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ArticleSpider/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="79" column="6" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
+          <folding>
+            <element signature="e#152#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ArticleSpider/spiders/zhihu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+        <state relative-caret-position="184">
+          <caret line="52" column="27" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

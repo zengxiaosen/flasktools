@@ -105,6 +105,15 @@ def createArticleTable():
                    'front_image_path varchar(200), comment_nums int(11), fav_nums int(11), praise_nums int(11), '
                    'tags varchar(200), content longtext )')
 
+    """
+    create table zhihu_question(zhihu_id bigint(20) primary key, topics varchar(255), url varchar(300), title varchar(200), 
+    content longtext, create_time datetime, update_time datetime, answer_num int(11), comments_num int(11), watch_user_num int(11), 
+    click_num int(11), crawl_time datetime ) 
+    
+    create table zhihu_answer(zhihu_id bigint(20) primary key, url varchar(300), question_id bigint(20), author_id varchar(100), 
+    content longtext, praise_num int(11), comments_num int(11), create_time date, update_time date, crawl_time datetime, crawl_update_time datetime)
+    """
+
 def creaateTable():
     engine.execute('create table test1(id int,name varchar(48),salary int not null)')
     engine.execute("insert into test1(id,name,salary) values(1,'zs',88888)")
