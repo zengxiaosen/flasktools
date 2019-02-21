@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc1f43fe-da92-4be5-a9d6-aa1127ba7f6b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ActivityUsingFlask/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/ActivityUsingFlask/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpiderUsingScrapy/ArticleSpider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpiderUsingScrapy/ArticleSpider/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpiderUsingScrapy/ArticleSpider/ArticleSpider/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpiderUsingScrapy/ArticleSpider/ArticleSpider/items.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpiderUsingScrapy/ArticleSpider/ArticleSpider/spiders/zhihu.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpiderUsingScrapy/ArticleSpider/ArticleSpider/spiders/zhihu.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,7 +51,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ActivityUsingFlask/application.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -169,7 +168,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="67" />
     <option name="y" value="213" />
     <option name="width" value="1299" />
@@ -181,6 +180,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -213,7 +213,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -407,6 +406,9 @@
       <workItem from="1549198387854" duration="1247000" />
       <workItem from="1549201510939" duration="81508000" />
       <workItem from="1550584721951" duration="1574000" />
+      <workItem from="1550636800058" duration="585000" />
+      <workItem from="1550731414359" duration="557000" />
+      <workItem from="1550733369089" duration="594000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1548867277011</created>
@@ -461,13 +463,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153974000" />
+    <option name="totallyTimeSpent" value="155710000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="213" width="1299" height="555" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2330407" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24501197" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />

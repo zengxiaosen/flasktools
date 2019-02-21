@@ -36,7 +36,9 @@ class ZhihuSpider(scrapy.Spider):
                 question_id = match_obj.group(2)
                 print(request_url, question_id)
                 yield scrapy.Request(request_url, headers=self.headers, callback=self.parse_question)
-        pass
+            else:
+                yield scrapy.Request(url, headers=self.headers, callback=self.parse)
+
 
     def parse_question(self, response):
 
@@ -50,10 +52,18 @@ class ZhihuSpider(scrapy.Spider):
             item_loader.add_css("content", ".QuestionHeader-detail")
             item_loader.add_value("url", response.url)
             item_loader.add_value("zhihu_id", question_id)
-            # TODO tomorrow
+            item_loader.add_css("answer_num", ".List-headerText span::text")
+            item_loader.add_css("comments_num", ".QuestionHeader-actions button::text")
+            item_loader.add_css("watch_user_num", ".NumberBoard-value::text")
+            item_loader.add_css("topics", ".QuestionHeader-topics .Popover::text")
+
+            question_item = item_loader.load_item()
+            print("question_item: ")
+            print(question_item)
+
         else:
             print("old version , please switch to latest version")
-        pass
+        yield question_item
 
     def start_requests(self):
         from selenium import webdriver
